@@ -22,7 +22,7 @@ function logmiddlewar(req, res, next) {
 }
 
 function testnumberinfeg10(req, res, next) {
-  if (req.params.id < 10) {
+  if (req.params.id <= 10 && isNaN(req.params.id) == false) { 
     next();
   } else {
     res.sendFile(resolve(__dirname, 'pages/index.html'));
