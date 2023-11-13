@@ -1,6 +1,8 @@
 const express = require('express');
 const { resolve } = require('path');
+const prisma = require('prisma');
 
+const prism = prisma()
 const app = express();
 var birds = require('./birds');
 
