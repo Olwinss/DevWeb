@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example App</title>
+</head>
+
+<body>
+    {{{body}}}
+    <br>
+    {{#with person}}
+    {{firstname}} {{lastname}}
+    {{/with}}
+    {{#each users}}
+    <p>
+        <span> {{ this.phone }} </span> 
+    </p>
+    {{/each}}
+    </script>
+</body>
+
+</html>
